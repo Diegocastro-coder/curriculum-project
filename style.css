@@ -113,15 +113,34 @@ nav ul{
 width: 50%;
 padding-right: 50px;
 
+
 }
 
 .about-me .img-container{
 width: 50%;
 text-align: center;
+position: relative;
 }
 .about-me .img-container img{
     width: 87%;
+    height: 100%;
 }
+.about-me .img-container .line{
+    width: calc(87% + 50px);
+    height:calc(100% + 50px) ;
+    border: solid var(--puple);
+
+    position: absolute;
+    top: -25px;
+    border-radius: 20px;
+   
+}
+
+.about-me .img-container .line.green{
+    transform: rotate(-3.3deg);
+    color: var(--green);
+}
+
 
 /*RESPONSIVIDADE*/
 
