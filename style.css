@@ -6,7 +6,7 @@
 
 body, button, input, textarea,  select{
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color:white;
 }
 html{
     scroll-behavior: smooth;
@@ -17,6 +17,8 @@ html{
 --bg-dark:#212226;
 --light-grey:#EBDEDE;
 --medium-grey:#2f3034;
+--orange:#ec7000;
+--medium-orange:#edae20;
 
 --menu-height:100px;
 
@@ -26,11 +28,14 @@ html, body{
     margin: 0;
     background: var(--bg-dark);
 }
+
 h1{
     font-size: 44px;
+    
 }
  h2{
     font-size: 24px;
+    color: var(--orange);
 }
 
 h1, h2{
@@ -42,8 +47,8 @@ p{
 }
 
 button{
-    background:var(--puple);
-    border: 0;
+    background:var(--orange);
+    border: 2px solid var(--medium-orange);
     padding: 8px 35px;
     font-weight: bold;
     border-radius: 16px;
@@ -52,11 +57,11 @@ button{
     cursor: pointer;
 }
 .title-purple{
-color: var(--puple);
+color: var(--orange);
 }
 
 .tilte-green{
-    color: var(--green);
+    color: var(--orange);
 }
 
 header{
@@ -95,7 +100,7 @@ header .container img{
 }
 nav ul a{
     font-size:24;
-    color: var(--green);
+    color: var(--orange);
     text-decoration: none;
 }
 nav ul a svg{
@@ -105,8 +110,6 @@ nav ul{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    
-
 
 }
 
@@ -134,7 +137,7 @@ position: relative;
 .about-me .img-container .line{
     width: calc(87% + 50px);
     height:calc(100% + 50px) ;
-    border: 1px solid var(--puple);
+    border: 1px solid var(--medium-orange);
     left: calc(50% - 87%/2 - 25px);
     position: absolute;
     top: -25px;
@@ -144,7 +147,7 @@ position: relative;
 
 .about-me .img-container .line.green{
     transform: rotate(-3.3deg);
-    color: var(--green);
+    color: var(--orange); 
 }
 
 .services{
@@ -160,13 +163,14 @@ position: relative;
     
 }
 .services h2{
-    color: var(--green);
+    color: var(--orange);
+    
 }
 
 .services .services-container .service-card{
   max-width: 360px;
     background: #2f3034;
-  border:1px solid var(--puple);
+  border:1px solid var(--medium-orange);
   border-radius: 16px;  
   padding: 40px 25px;
   display: flex;
@@ -179,7 +183,9 @@ position: relative;
 .services .services-container .service-card img{
     margin: 15px 0 40px;
     width: 90px;
+    
 }
+
 
 .service-card + .service-card{
     margin-left: 15px;
@@ -200,7 +206,7 @@ box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(42px);
 border-radius: 16px;
 max-width: 360px;
-border: 1px solid white ;
+border: 1px solid var(--medium-orange) ;
 text-align:left ;
 padding: 50px 25px;
 }
@@ -219,12 +225,13 @@ padding: 50px 25px;
 .portfolio-container .portfolio-card .img-container .line{
         width: calc(100% + 24px);
         height:calc(100% + 24px) ;
-        border: 1px solid var(--green);
+        border: 1px solid var(--medium-orange);
         transform: rotate(-1.93deg);
         position: absolute;
         top: -12px;
         border-radius: 11px;
         left: calc(50% - 100%/2 - 12px);
+        
     
 }
 .portfolio .portfolio-container .portfolio-card .language-container ul{
@@ -237,8 +244,8 @@ padding: 50px 25px;
     margin-bottom: 20px;
 }
 .portfolio .portfolio-container .portfolio-card .language-container ul li{
-    color: var(--green);
-    border: 1px solid var(--green);
+    color: var(--orange);
+    border: 1px solid var(--medium-orange);
     border-radius: 8px;
     padding: 3px 15px;
 }
@@ -273,9 +280,9 @@ p{
     margin-bottom: 50px;
 }
 .secondary-button{
-color: var(--green);
-border: 1px solid var(--puple);
-background: var(--medium-grey);
+color: var(--light-grey);
+border: 2px solid var(--medium-orange);
+background: var(--orange);
 font-weight: bold;
 height: 80px;
 display: flex;
@@ -294,7 +301,7 @@ align-items: center;
 .contact h1{
     width: fit-content;
     margin: 0 auto 40px;
-    background: -webkit-linear-gradient(#15cdcb, #5280e2);
+    background: -webkit-linear-gradient(var(--medium-orange), var(--orange));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -306,6 +313,7 @@ align-items: center;
     margin: 50px auto 0;
     display: flex;
     justify-content: space-around;
+    
 
 }
 footer{
