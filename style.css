@@ -413,7 +413,7 @@ nav ul a {
         margin-bottom:calc(var(--menu-height) + 50px);
     }
     header .container{
-    padding: 0 40px;
+    padding: 0 50px;
     }
     nav ul a {
       font-size: 12px;
